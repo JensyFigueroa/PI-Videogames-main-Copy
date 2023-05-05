@@ -48,7 +48,7 @@ export default function VideoGames() {
         <div className={styles.filter}>
           <label>Origin:</label>
           <select onChange={(e) => dispatch(filterOrigin(e.target.value))}>
-            {['Select Option', 'All Videogames','Api', 'Local'].map((e, i) => <option value={e} key={i}>{e}</option>)}
+            {['Select Option','Api', 'Local'].map((e, i) => <option value={e} key={i}>{e}</option>)}
           </select>
         </div>
 

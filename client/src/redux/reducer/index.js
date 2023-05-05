@@ -93,9 +93,9 @@ const rootReducer = (state = inicialState, action) => {
 
 
         case FILTER_ORIGIN:
-
             let filterXorigin;
-            if (action.payload === 'All Videogames') {
+
+            if (action.payload === 'Select Option') {
                 filterXorigin = state.allGames
             }
 
