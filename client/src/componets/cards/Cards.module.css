@@ -1,0 +1,53 @@
+.containerAll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.containerCards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.containerPagination{
+    display: flex ;
+}
+.btnPagination {
+    width: 90px;
+    height: 40px;
+    margin-top: 40px;
+    margin-right: 10px;
+    color: #ff3333;
+    background-color: rgb(16, 0, 192);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-style: italic;
+  }
+  
+  .btnActive {
+    width: 90px;
+    height: 40px;
+    margin-top: 40px;
+    margin-right: 10px;
+    color: rgb(16, 0, 192);
+    background-color: #ff3333;
+    border: 1px solid #ff3333;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-style: italic;
+  }
+
+  .msg{
+    margin: 60px;
+    color:red;
+    font-size: 25px;
+    font-style:italic;
+    font-weight: 600;
+  }
+

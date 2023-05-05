@@ -1,0 +1,112 @@
+.section {
+  position: relative;
+  background-image: url(https://media.rawg.io/media/games/a60/a6037bf86b4bb391f1eeeff2c4b72727.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+  min-height: 55vh;
+  width: 100%;
+}
+
+.section h1 {
+  position: absolute;
+  top: 180px;
+  right: 200px;
+  font-style: italic;
+  color: white;
+}
+
+.section p {
+  position: absolute;
+  top: 230px;
+  right: 200px;
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+}
+
+
+.containerSearch {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: rgba(2, 4, 74);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boxFilter{
+  display: flex;
+}
+
+.filter {
+  width: 230px;
+  height: 80px;
+  background: rgb(192, 0, 0);
+  border: solid rgb(192, 0, 0);
+  border-radius: 10px;
+  border-width: 0 12px 0 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 80px;
+  margin-right: 0px;
+}
+
+.filter label {
+  margin-left: 20px;
+}
+
+.filter select {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 12px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnPagination {
+  width: 90px;
+  height: 40px;
+  margin-top: 40px;
+  margin-right: 10px;
+  color: #ff3333;
+  background-color: rgb(16, 0, 192);
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.btnActive {
+  width: 90px;
+  height: 40px;
+  margin-top: 40px;
+  margin-right: 10px;
+  color: rgb(16, 0, 192);
+  background-color: #ff3333;
+  border: 1px solid #ff3333;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+@media(max-width: 1199px) and (min-width: 991px) {
+  .containerSearch{
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 200px;
+  }
+
+  .boxFilter{
+    align-content: center;
+  }
+
+}

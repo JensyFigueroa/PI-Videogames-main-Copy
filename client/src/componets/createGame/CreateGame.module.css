@@ -1,0 +1,139 @@
+.containerAll{
+    background: url(https://media.rawg.io/media/games/bef/bef40c8ee09ad001c0f0b2cf0d07f20e.jpg);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+}
+.containerForm {
+    position: relative;
+    top: 100px;
+    width: 50%;
+    height: 650px;
+    background-color: rgba(0, 200, 255, 0.498);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.field {
+    margin: 0 30px;
+    /* background-color: aqua; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.field label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+.field input {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    font-weight: 300;
+    padding: 12px;
+}
+
+.field textarea {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    font-weight: 300;
+    padding: 12px;
+}
+
+
+.btnChecklist {
+    width: 100%;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    color: #000;
+    background: #fff;
+    display: flex;
+    font-weight: 300;
+    justify-content: flex-start;
+    padding: 12px;
+}
+
+
+.btn {
+    width: 200px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: rgb(16, 0, 192);
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.btn:hover {
+    color: #ff3333;
+    background-color: rgb(16, 0, 192);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ff3333;
+    font-size: 90%;
+}
+
+
+/********************* CheckBox *********************/
+
+.multipleSelection {
+    width: 300px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.checkBoxes{
+    background: #fff;
+    border: 0.5px solid #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 150px;
+    overflow-x: scroll;
+    padding: 20px 15px;
+    position: absolute;
+    width: 45%;
+    z-index: 10;
+}
+
+
+.checkBoxes label {
+    display: block;
+
+}
+
+.checkBoxes input {
+    background-color: #ff3333;
+
+}
+
+.checkBoxes label:hover {
+    background-color: rgb(16, 0, 192,.5);
+}
+
+
+.footer{
+    position: relative;
+}

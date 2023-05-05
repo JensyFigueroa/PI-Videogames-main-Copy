@@ -1,0 +1,73 @@
+.fondo:before {
+    background-color: rgba(0, 0, 0, .55);
+    box-shadow: inset 0 4px 18.38vw 11vw rgba(0, 0, 0, .7);
+}
+
+.containerDetails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    min-height: 100vh;
+    object-fit: cover;
+    padding: 111px 20px 80px;
+    z-index: 1;
+    font-family: sans-serif;
+}
+
+.details {
+    width: 50%;
+}
+
+.field {
+    backdrop-filter: blur(11px);
+    background: rgba(0, 26, 255, 0.301);
+    border-radius: 20px;
+    color: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #ff3333;
+}
+
+.field h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.field p {
+    line-height: 165%;
+}
+
+.containerImage {
+    width: 40%;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 700px;
+    height: 400px;
+    margin-bottom: auto;
+    border-radius: 30px;
+    border: 6px solid #ff3333;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 70px;
+    margin-left: 250px;
+    border-radius: 10px;
+    background-color: rgb(16, 0, 192);
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.btn:hover {
+    color: #ff3333;
+    ;
+    background-color: rgb(16, 0, 192);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ff3333;
+}
