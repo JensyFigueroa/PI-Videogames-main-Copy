@@ -12,7 +12,8 @@ export default function Detail() {
   const dispatch = useDispatch()
 
   useEffect(()=>{
-    dispatch(detailId(id))
+    dispatch(detailId(id));
+    window.scrollTo(0, 0);
   },[dispatch, id])
 
   const game = useSelector(state => state.detailId)

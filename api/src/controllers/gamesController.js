@@ -39,28 +39,12 @@ const gamesArrObj = async (req, res) => {
     }
 }
 
-// const gameXId = async (req, res) => {
-//     const { idVideogame } = req.params
-
-//     try {
-//         if (!isNaN(idVideogame)) { //verificamos que el id no se alfanumerico
-//             const gameApi = (await axios.get(`https://api.rawg.io/api/games/${idVideogame}?key=${API_KEY}`)).data;
-//             res.status(200).json(cleanGames([gameApi]))
-//         } else {
-//             const gameDB = await Videogame.findByPk(idVideogame, {include:[{model:Genres, attributes:['name'], through:{attributes:[]}}]})
-//             res.status(200).json([gameDB])
-//         }
-//     } catch (error) {
-//         res.status(500).json({ error: error.message })   
-//     }
-
-// }
 
 const gameXId = (req, res) => {
     const { idVideogame } = req.params;
 
     if (!isNaN(idVideogame)) { //verificamos que el id no se alfanumerico
-       axios.get(`https://api.rawg.io/api/games/${idVideogame}?key=${API_KEY}`)
+        axios.get(`https://api.rawg.io/api/games/${idVideogame}?key=${API_KEY}`)
         .then(response => res.status(200).json(cleanObjAPI(response)))
         .catch(error => res.status(500).json({error: error.message}))          
 

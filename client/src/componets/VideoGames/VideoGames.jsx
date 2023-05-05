@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import styles from './VideoGames.module.css'
 import Cards from '../cards/Cards.jsx'
 import { useDispatch, useSelector } from 'react-redux'
@@ -9,12 +9,11 @@ import spinner from './Spinner.gif'
 
 export default function VideoGames() {
 
-  const [origin, setOrigin] = useState()
-
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getGames());
     dispatch(getGenres());
+    window.scrollTo(0, 0);
   }, [dispatch])
 
   function onSearch(name) {
@@ -59,8 +58,6 @@ export default function VideoGames() {
           </select>
         </div>
         </div>
-
-
       </div>
 
       {stateLoading ? <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
